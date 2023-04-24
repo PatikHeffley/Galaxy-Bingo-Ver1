@@ -1,0 +1,778 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Galaxy Bingo</title>
+
+<style>
+.div1 { 
+	position: absolute;
+	background-color:#043149;
+	border: 15px solid #043149;
+	padding: 0px;
+	margin: 0px;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #ffffff;
+	height: 614px;
+	width: 648px;
+	top: 127px;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+.div2 { 
+	position: absolute;
+	background-color:#043149;
+	border: 15px solid #043149;
+	padding: 0px;
+	margin: 0px;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #ffffff;
+	height: 98px;
+	width: 648px;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+
+
+
+</style>
+
+
+<style>
+.Button1, .Button2, .Button3, .Button4, .Button5{ 
+  position: relative;
+  
+} 
+
+
+.Button6, .Button7, .Button8, .Button9, .Button10{ 
+  position: relative;
+  top: 5px;
+  
+} 
+ 
+.Button11, .Button12, .Button13,.Button14, .Button15{
+  position: relative;
+  top: 10px;
+  
+} 
+
+
+.Button16, .Button17, .Button18, .Button19, .Button20{
+  position: relative;
+  top: 15px;
+  
+} 
+
+
+.Button21, .Button22, .Button23, .Button24, .Button25{
+  position: relative;
+  top: 20px;
+  
+} 
+</style>
+<style type="text/css">
+				
+			body {
+				background-color: #084f75;
+				color: 000000;
+				position: absolute;
+				top: -10px;
+				left: 400px;
+				background-image: url("images/Milky Way.png");
+				background-repeat: repeat-y;
+				top: 10px;
+				}
+			img {
+				position: absolute;
+				z-index: 100px;
+				width:100px;
+				height: auto;
+				
+				
+			}
+			input { 
+				background-color: #0000ff;
+				color: #0000ff;
+				font-size: 100px;
+				font-family: Georgia;
+				opacity: 0.7;
+				border-radius: 5px;
+			}
+			h1 {
+				text-align: center;
+				color: #ffffff;
+				font-family: Georgia;
+				strong;
+				font-size: 40px
+			
+			
+			
+</style>
+
+<script>
+	var count1 = 1;
+    function setColor1(btn, color) {
+        var property = document.getElementById('button1');
+        if (count1 == 0) {
+            property.style.backgroundColor = "#0000ff"
+             count1 = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#ff0000"
+            count1 = 0;
+        }
+    }
+	var count2 = 1;
+    function setColor2(btn, color) {
+        var property = document.getElementById('button2');
+        if (count2 == 0) {
+            property.style.backgroundColor = "#0000ff"
+             count2 = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#ff0000"
+            count2 = 0;
+        }
+    }
+	var count3 = 1;
+    function setColor3(btn, color) {
+        var property = document.getElementById('button3');
+        if (count3 == 0) {
+            property.style.backgroundColor = "#0000ff"
+             count3 = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#ff0000"
+            count3 = 0;
+        }
+    }
+	var count4 = 1;
+    function setColor4(btn, color) {
+        var property = document.getElementById('button4');
+        if (count4 == 0) {
+            property.style.backgroundColor = "#0000ff"
+             count4 = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#ff0000"
+            count4 = 0;
+        }
+    }
+	var count5 = 1;
+    function setColor5(btn, color) {
+        var property = document.getElementById('button5');
+        if (count5 == 0) {
+            property.style.backgroundColor = "#0000ff"
+             count5 = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#ff0000"
+            count5 = 0;
+        }
+    }
+	var count6 = 1;
+    function setColor6(btn, color) {
+        var property = document.getElementById('button6');
+        if (count6 == 0) {
+            property.style.backgroundColor = "#0000ff"
+             count6 = 1;        
+        }
+        else {
+            property.style.backgroundColor = "#ff0000"
+            count6 = 0;
+        }
+    }
+	var count7 = 1;
+    function setColor7(btn, color) {
+        var property1 = document.getElementById('button7');
+        if (count7 == 0) {
+            property1.style.backgroundColor = "#0000ff"
+             count7 = 1;        
+        }
+        else {
+            property1.style.backgroundColor = "#ff0000"
+            count7 = 0;
+		}
+	}
+	var count8 = 1;
+    function setColor8(btn, color) {
+        var property1 = document.getElementById('button8');
+        if (count8 == 0) {
+            property1.style.backgroundColor = "#0000ff"
+             count8 = 1;        
+        }
+        else {
+            property1.style.backgroundColor = "#ff0000"
+            count8 = 0;
+		}
+	}
+	var count9 = 1;
+    function setColor9(btn, color) {
+        var property1 = document.getElementById('button9');
+        if (count9 == 0) {
+            property1.style.backgroundColor = "#0000ff"
+             count9 = 1;        
+        }
+        else {
+            property1.style.backgroundColor = "#ff0000"
+            count9 = 0;
+		}
+	}
+	var count10 = 1;
+    function setColor10(btn, color) {
+        var property1 = document.getElementById('button10');
+        if (count10 == 0) {
+            property1.style.backgroundColor = "#0000ff"
+             count1 = 1;        
+        }
+        else {
+            property1.style.backgroundColor = "#ff0000"
+            count10 = 0;
+		}
+	}
+	var count11 = 1;
+    function setColor11(btn, color) {
+        var property2 = document.getElementById('button11');
+        if (count11 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count11 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count11 = 0;
+		}
+	}
+	var count12 = 1;
+    function setColor12(btn, color) {
+        var property2 = document.getElementById('button12');
+        if (count12 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count12 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count12 = 0;
+		}
+	}
+	var count13 = 1;
+    function setColor13(btn, color) {
+        var property2 = document.getElementById('button13');
+        if (count13 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count13 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count13 = 0;
+		}
+	}
+	var count14 = 1;
+    function setColor14(btn, color) {
+        var property2 = document.getElementById('button14');
+        if (count14 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count14 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count14 = 0;
+		}
+	}
+	var count15 = 1;
+    function setColor15(btn, color) {
+        var property2 = document.getElementById('button15');
+        if (count15 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count15 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count15 = 0;
+		}
+	}
+	var count16 = 1;
+    function setColor16(btn, color) {
+        var property2 = document.getElementById('button16');
+        if (count16 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count16 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count16 = 0;
+		}
+	}
+	var count17 = 1;
+    function setColor17(btn, color) {
+        var property2 = document.getElementById('button17');
+        if (count17 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count17 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count17 = 0;
+		}
+	}
+	var count18 = 1;
+    function setColor18(btn, color) {
+        var property2 = document.getElementById('button18');
+        if (count18 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count18 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count18 = 0;
+		}
+	}
+	var count19 = 1;
+    function setColor19(btn, color) {
+        var property2 = document.getElementById('button19');
+        if (count19 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count19 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count19 = 0;
+		}
+	}
+	var count20 = 1;
+    function setColor20(btn, color) {
+        var property2 = document.getElementById('button20');
+        if (count20 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count20 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count20 = 0;
+		}
+	}
+	var count21 = 1;
+    function setColor21(btn, color) {
+        var property2 = document.getElementById('button21');
+        if (count21 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count21 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count21 = 0;
+		}
+	}
+	var count22 = 1;
+    function setColor22(btn, color) {
+        var property2 = document.getElementById('button22');
+        if (count22 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count22 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count22 = 0;
+		}
+	}
+	var count23 = 1;
+    function setColor23(btn, color) {
+        var property2 = document.getElementById('button23');
+        if (count23 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count23 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count23 = 0;
+		}
+	}
+	var count24 = 1;
+    function setColor24(btn, color) {
+        var property2 = document.getElementById('button24');
+        if (count24 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count24 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count24 = 0;
+		}
+	}
+	var count25 = 1;
+    function setColor25(btn, color) {
+        var property2 = document.getElementById('button25');
+        if (count25 == 0) {
+            property2.style.backgroundColor = "#0000ff"
+             count25 = 1;        
+        }
+        else {
+            property2.style.backgroundColor = "#ff0000"
+            count25 = 0;
+		}
+	}
+	function Bingo(btn, color) {
+	if (count1 == 0 && count2 == 0 && count3 == 0 && count4 == 0 && count5 == 0) {
+		var property = document.getElementById('button5');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button4');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button3');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button2');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button1');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo2(btn, color) {
+	if (count6 == 0 && count7 == 0 && count8 == 0 && count9 == 0 && count10 == 0) {
+		var property = document.getElementById('button6');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button7');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button8');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button9');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button10');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo3(btn, color) {
+	if (count11 == 0 && count12 == 0 && count13 == 0 && count14 == 0 && count15 == 0) {
+		var property = document.getElementById('button15');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button14');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button13');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button12');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button11');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo4(btn, color) {
+	if (count16 == 0 && count17 == 0 && count18 == 0 && count19 == 0 && count20 == 0) {
+		var property = document.getElementById('button16');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button17');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button18');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button19');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button20');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo5(btn, color) {
+	if (count21 == 0 && count22 == 0 && count23 == 0 && count24 == 0 && count25 == 0) {
+		var property = document.getElementById('button25');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button24');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button23');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button22');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button21');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo6(btn, color) {
+	if (count20 == 0 && count15 == 0 && count10 == 0 && count5 == 0 && count25 == 0) {
+		var property = document.getElementById('button25');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button20');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button15');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button10');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button5');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo7(btn, color) {
+	if (count19 == 0 && count14 == 0 && count9 == 0 && count4 == 0 && count24 == 0) {
+		var property = document.getElementById('button24');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button19');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button14');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button9');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button4');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo8(btn, color) {
+	if (count18 == 0 && count13 == 0 && count8 == 0 && count3 == 0 && count23 == 0) {
+		var property = document.getElementById('button23');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button18');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button13');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button8');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button3');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo9(btn, color) {
+	if (count17 == 0 && count12 == 0 && count7 == 0 && count2 == 0 && count22 == 0) {
+		var property = document.getElementById('button22');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button17');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button12');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button7');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button2');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo10(btn, color) {
+	if (count16 == 0 && count11 == 0 && count6 == 0 && count1 == 0 && count21 == 0) {
+		var property = document.getElementById('button21');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button16');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button11');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button6');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button1');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo11(btn, color) {
+	if (count1 == 0 && count7 == 0 && count13 == 0 && count19 == 0 && count25 == 0) {
+		var property = document.getElementById('button25');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button19');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button13');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button7');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button1');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	function Bingo12(btn, color) {
+	if (count5 == 0 && count9 == 0 && count13 == 0 && count17 == 0 && count21 == 0) {
+		var property = document.getElementById('button21');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button17');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button13');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button9');
+			property.style.backgroundColor = "#ffff00"
+		var property = document.getElementById('button5');
+			property.style.backgroundColor = "#ffff00"
+			
+	}
+	else {
+		
+	}
+	}
+	</script>
+	<script>
+	
+</script>
+<script>
+var getRand = (function() {
+    var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29];
+    var current = [];
+    function rand(n) {
+        return (Math.random() * n)|0;
+    }
+    return function() {
+      if (!current.length) current = nums.slice();
+      return current.splice(rand(current.length), 1);
+    }
+}());
+</script>
+<script>
+
+
+var thirteen = "13.png"
+var imlocation = "images/";
+ var currentdate = 0;
+ var image_number = 0;
+ var image = 0
+ function getRandomInt(max) {
+  return Math.floor(Math.random() * (max));
+ }
+  function randomimage() {
+ 	image_number = getRand(28);
+ 	return(image[image_number])
+ }
+
+ image = randomimage
+ image[0] = '1.png'
+ image[1] = '2.png'
+ image[2] = '3.png'
+ image[3] = '4.png'
+ image[4] = '5.png'
+ image[5] = '6.png'
+ image[6] = '7.png'
+ image[7] = '8.png'
+ image[8] = '9.png'
+ image[9] = '10.png'
+ image[10] = '11.png'
+ image[11] = '12.png'
+ image[12] = '14.png'
+ image[13] = '26.png'
+ image[14] = '15.png'
+ image[15] = '16.png'
+ image[16] = '17.png'
+ image[17] = '18.png'
+ image[18] = '19.png'
+ image[19] = '20.png'
+ image[20] = '21.png'
+ image[21] = '22.png'
+ image[22] = '23.png'
+ image[23] = '24.png'
+ image[24] = '25.png'
+ image[25] = '27.png'
+ image[26] = '28.png'
+ image[27] = '29.png'
+ image[28] = '30.png'
+ image[29] = '31.png'
+
+ </script>
+
+ 
+</head>
+
+
+<body>
+<div class="div2">
+<h1 style="opacity: 1; z-index: 100">Galaxy Bingo!</h1>
+<h1><a href="Project 4 Randomizer.html" style="top: 0px; z-index: 100; opacity: 1;
+ left: 0px; position: absolute; color: #ffff00; font-size: 20px;">Bingo Randomizer</a></h1>	
+</div>
+<br/>
+<div class="div1">	
+<input type="button" id="button1" value = "    &#8198;" class="Button1" onclick="setColor1('btn', '000000'); Bingo('btn', '111111'); Bingo10('btn', '111111'); Bingo11('btn', '111111')"/>
+<input type="button" id="button2" value = "    &#8198;" class="Button2" onclick="setColor2('btn', 'ffffff'); Bingo('btn', '111111'); Bingo9('btn', '111111')"/>
+<input type="button" id="button3" value = "    &#8198;" class="Button3" onclick="setColor3('btn', '111111'); Bingo('btn', '111111'); Bingo8('btn', '111111')"/>
+<input type="button" id="button4" value = "    &#8198;" class="Button4" onclick="setColor4('btn', '000000'); Bingo('btn', '111111'); Bingo7('btn', '111111')"/>
+<input type="button" id="button5" value = "    &#8198;" class="Button5" onclick="setColor5('btn', 'ffffff'); Bingo('btn', '111111'); Bingo6('btn', '111111'); Bingo12('btn', '111111')"/>
+<br/>
+<input type="button" id="button6" value = "    &#8198;" class="Button6" onclick="setColor6('btn', '111111'); Bingo2('btn', '111111'); Bingo10('btn', '111111')"/>
+<input type="button" id="button7" value = "    &#8198;" class="Button7" onclick="setColor7('btn', '111111'); Bingo2('btn', '111111'); Bingo9('btn', '111111'); Bingo11('btn', '111111')"/>
+<input type="button" id="button8" value = "    &#8198;" class="Button8" onclick="setColor8('btn', '111111'); Bingo2('btn', '111111'); Bingo8('btn', '111111')"/>
+<input type="button" id="button9" value = "    &#8198;" class="Button9" onclick="setColor9('btn', '111111'); Bingo2('btn', '111111'); Bingo7('btn', '111111'); Bingo12('btn', '111111')"/>
+<input type="button" id="button10" value = "    &#8198;" class="Button10" onclick="setColor10('btn', '111111'); Bingo2('btn', '111111'); Bingo6('btn', '111111')"/>
+<br/>
+<input type="button" id="button11" value = "    &#8198;" class="Button11" onclick="setColor11('btn', '111111'); Bingo3('btn', '111111'); Bingo10('btn', '111111')"/>
+<input type="button" id="button12" value = "    &#8198;" class="Button12" onclick="setColor12('btn', '111111'); Bingo3('btn', '111111'); Bingo9('btn', '111111')"/>
+<input type="button" id="button13" value = "    &#8198;" class="Button13" onclick="setColor13('btn', '111111'); Bingo3('btn', '111111'); Bingo8('btn', '111111'); Bingo11('btn', '111111'); Bingo12('btn', '111111')"/>
+<input type="button" id="button14" value = "    &#8198;" class="Button14" onclick="setColor14('btn', '111111'); Bingo3('btn', '111111'); Bingo7('btn', '111111')"/>
+<input type="button" id="button15" value = "    &#8198;" class="Button15" onclick="setColor15('btn', '111111'); Bingo3('btn', '111111'); Bingo6('btn', '111111')"/>
+<br/>
+<input type="button" id="button16" value = "    &#8198;" class="Button16" onclick="setColor16('btn', '111111'); Bingo4('btn', '111111'); Bingo10('btn', '111111')"/>
+<input type="button" id="button17" value = "    &#8198;" class="Button17" onclick="setColor17('btn', '111111'); Bingo4('btn', '111111'); Bingo9('btn', '111111'); Bingo12('btn', '111111')"/>
+<input type="button" id="button18" value = "    &#8198;" class="Button18" onclick="setColor18('btn', '111111'); Bingo4('btn', '111111'); Bingo8('btn', '111111')"/>
+<input type="button" id="button19" value = "    &#8198;" class="Button19" onclick="setColor19('btn', '111111'); Bingo4('btn', '111111'); Bingo7('btn', '111111'); Bingo11('btn', '111111')"/>
+<input type="button" id="button20" value = "    &#8198;" class="Button20" onclick="setColor20('btn', '111111'); Bingo4('btn', '111111'); Bingo6('btn', '111111')"/>
+<br/>
+<input type="button" id="button21" value = "    &#8198;" class="Button21" onclick="setColor21('btn', '111111'); Bingo5('btn', '111111'); Bingo10('btn', '111111'); Bingo12('btn', '111111')"/>
+<input type="button" id="button22" value = "    &#8198;" class="Button22" onclick="setColor22('btn', '111111'); Bingo5('btn', '111111'); Bingo9('btn', '111111')"/>
+<input type="button" id="button23" value = "    &#8198;" class="Button23" onclick="setColor23('btn', '111111'); Bingo5('btn', '111111'); Bingo8('btn', '111111')"/>
+<input type="button" id="button24" value = "    &#8198;" class="Button24" onclick="setColor24('btn', '111111'); Bingo5('btn', '111111'); Bingo7('btn', '111111')"/>
+<input type="button" id="button25" value = "    &#8198;" class="Button25" onclick="setColor25('btn', '111111'); Bingo5('btn', '111111'); Bingo6('btn', '111111'); Bingo11('btn', '111111')"/>
+</div class="div1">
+
+
+
+
+<script>
+document.write("<img src='" + imlocation + image()+ "'style='left: 26px; top: 150px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 156px; top: 150px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 287px; top: 150px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 417px; top: 150px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 547px; top: 150px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 26px; top: 275px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 156px; top: 275px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 287px; top: 275px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 417px; top: 275px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 547px; top: 275px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 26px; top: 399px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 156px; top: 399px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + thirteen + "'style='left: 287px; top: 399px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 417px; top: 399px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 547px; top: 399px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 26px; top: 522px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 156px; top: 522px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 287px; top: 522px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 417px; top: 522px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 547px; top: 522px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 26px; top: 646px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 156px; top: 646px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 287px; top: 646px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 417px; top: 646px; pointer-events: none;'>");
+document.write("<img src='" + imlocation + image()+ "'style='left: 547px; top: 646px; pointer-events: none;'>");
+</script>
+
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Bingo Randomizer</title>
+
+<style>
+.div1 { 
+	background-color:#bfcfcf;
+	border: 15px solid #bfcfcf;
+	padding: 0px;
+	margin: 0px;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+	color: #ffffff;
+	height: 770px;
+	width: 650px;
+	top: 127px;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+}
+</style>
+<style>
+body {
+		color: 000000;
+		position: absolute;
+		left: 800px;
+		top: -10px;
+		background-image: url("images/Milky Way.png");
+	}
+	input { 
+				background-color: #0c787b;
+				color: #0c787b;
+				font-size: 100px;
+				font-family: Georgia;
+				width: 125px;
+				height: 125px;
+				position: relative;
+				opacity: 1;
+				
+			}
+		
+		background-image {
+				position: absolute;
+				z-index: 1px;
+				width: 50px;
+				height: auto;
+		}
+		
+.Button1 {
+	position: absolute;
+	left: -550px;
+	top: 250px;
+	width: 250px;
+	height: 250px;
+	background-size: 220px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 20px;
+	opacity: 0.9;
+}
+.Button2, .Button3, .Button4, .Button5, .Button6, .Button7, .Button8, .Button9, .Button10, .Button11, 
+.Button12, .Button13,.Button14, .Button15, .Button16, .Button17, .Button18, .Button19, .Button20, .Button21, 
+.Button22, .Button23, .Button24, .Button25, .Button26, .Button27, .Button28, .Button29, .Button30, .Button31  {
+background-size: 100px;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 5px;
+}
+}
+.Button2, .Button3, .Button4, .Button5{ 
+  position: relative;
+  
+} 
+.Button6 {
+position: relative;
+top: 0px;
+}
+.Button7, .Button8, .Button9, .Button10, .Button11{ 
+  position: relative;
+  top: 5px;
+  
+} 
+.Button12, .Button13,.Button14, .Button15, .Button16{
+  position: relative;
+  top: 10px;
+  
+} 
+.Button17, .Button18, .Button19, .Button20, .Button21{
+  position: relative;
+  top: 15px;
+  
+} 
+.Button22, .Button23, .Button24, .Button25, .Button26{
+  position: relative;
+  top: 20px;
+  
+} 
+.Button27, .Button28, .Button29, .Button30, .Button31{
+  position: relative;
+  top: 25px;
+  
+} 
+</style>
+
+<script>
+
+var getRand = (function() {
+    var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28];
+    var current = [];
+    function rand(n) {
+        return (Math.random() * n)|0;
+    }
+    return function() {
+      if (!current.length) current = nums.slice();
+      return current.splice(rand(current.length), 1);
+    }
+}());
+
+</script>
+
+
+<script>
+ var count1 = 0;
+    function setColor1(btn, color) {
+        var property2 = document.getElementById('button1');
+        if (count1 == 0) {
+            property2.style.backgroundColor = "#ffcf1c"
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1;        
+        }
+		else if (image_number == 0){
+			var property1 = document.getElementById('button2');
+            property1.style.backgroundColor = "#ffcf1c"
+			property1.style.backgroundImage = "url(images/1.png)"
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 1){
+		var property3 = document.getElementById('button3');
+			property3.style.backgroundImage = "url(images/2.png)"
+            property3.style.backgroundColor = "#ffcf1c"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 2){
+		var property4 = document.getElementById('button4');
+			property4.style.backgroundImage = "url(images/3.png)"
+            property4.style.backgroundColor = "#ffcf1c"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 3){
+		var property5 = document.getElementById('button5');
+            property5.style.backgroundColor = "#ffcf1c"
+			property5.style.backgroundImage = "url(images/4.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 4){
+		var property6 = document.getElementById('button6');
+            property6.style.backgroundColor = "#ffcf1c"
+			property6.style.backgroundImage = "url(images/5.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 5){
+		var property7 = document.getElementById('button7');
+            property7.style.backgroundColor = "#ffcf1c"
+			property7.style.backgroundImage = "url(images/6.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 6){
+		var property8 = document.getElementById('button8');
+            property8.style.backgroundColor = "#ffcf1c"
+			property8.style.backgroundImage = "url(images/7.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 7){
+		var property9 = document.getElementById('button9');
+            property9.style.backgroundColor = "#ffcf1c"
+			property9.style.backgroundImage = "url(images/8.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 8){
+		var property10 = document.getElementById('button10');
+            property10.style.backgroundColor = "#ffcf1c"
+			property10.style.backgroundImage = "url(images/9.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 9){
+		var property11 = document.getElementById('button11');
+            property11.style.backgroundColor = "#ffcf1c"
+			property11.style.backgroundImage = "url(images/10.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 10){
+		var property12 = document.getElementById('button12');
+            property12.style.backgroundColor = "#ffcf1c"
+			property12.style.backgroundImage = "url(images/11.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 11){
+		var property13 = document.getElementById('button13');
+            property13.style.backgroundColor = "#ffcf1c"
+			property13.style.backgroundImage = "url(images/12.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 12){
+		var property14 = document.getElementById('button14');
+            property14.style.backgroundColor = "#ffcf1c"
+			property14.style.backgroundImage = "url(images/14.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 13){
+		var property15 = document.getElementById('button15');
+            property15.style.backgroundColor = "#ffcf1c"
+			property15.style.backgroundImage = "url(images/26.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 14){
+		var property16 = document.getElementById('button16');
+            property16.style.backgroundColor = "#ffcf1c"
+			property16.style.backgroundImage = "url(images/15.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 15){
+		var property17 = document.getElementById('button17');
+            property17.style.backgroundColor = "#ffcf1c"
+			property17.style.backgroundImage = "url(images/16.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 16){
+		var property18 = document.getElementById('button18');
+            property18.style.backgroundColor = "#ffcf1c"
+			property18.style.backgroundImage = "url(images/17.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 17){
+		var property19 = document.getElementById('button19');
+            property19.style.backgroundColor = "#ffcf1c"
+			property19.style.backgroundImage = "url(images/18.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 18){
+		var property20 = document.getElementById('button20');
+            property20.style.backgroundColor = "#ffcf1c"
+			property20.style.backgroundImage = "url(images/19.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 19){
+		var property21 = document.getElementById('button21');
+            property21.style.backgroundColor = "#ffcf1c"
+			property21.style.backgroundImage = "url(images/20.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 20){
+		var property22 = document.getElementById('button22');
+            property22.style.backgroundColor = "#ffcf1c"
+			property22.style.backgroundImage = "url(images/21.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 21){
+		var property23 = document.getElementById('button23');
+            property23.style.backgroundColor = "#ffcf1c"
+			property23.style.backgroundImage = "url(images/22.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 22){
+		var property24 = document.getElementById('button24');
+            property24.style.backgroundColor = "#ffcf1c"
+			property24.style.backgroundImage = "url(images/23.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 23){
+		var property25 = document.getElementById('button25');
+            property25.style.backgroundColor = "#ffcf1c"
+			property25.style.backgroundImage = "url(images/24.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 24){
+		var property26 = document.getElementById('button26');
+            property26.style.backgroundColor = "#ffcf1c"
+			property26.style.backgroundImage = "url(images/25.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 25){
+		var property27 = document.getElementById('button27');
+            property27.style.backgroundColor = "#ffcf1c"
+			property27.style.backgroundImage = "url(images/27.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 26){
+		var property28 = document.getElementById('button28');
+            property28.style.backgroundColor = "#ffcf1c"
+			property28.style.backgroundImage = "url(images/28.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 27){
+		var property29 = document.getElementById('button29');
+            property29.style.backgroundColor = "#ffcf1c"
+			property29.style.backgroundImage = "url(images/29.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		else if (image_number == 28){
+		var property30 = document.getElementById('button30');
+            property30.style.backgroundColor = "#ffcf1c"
+			property30.style.backgroundImage = "url(images/30.png)"
+			
+			property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             count1 = 1; 
+			}
+		
+		else if (count1 == 2) {
+            property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             property2.style.backgroundColor = "#ffcf1c"
+			 count1 = 1;        
+        }
+        else {
+            property2.style.backgroundImage =  "url(" + imlocation + image() + ")"
+             property2.style.backgroundColor = "#ffcf1c"
+			count1 = 2;
+		}
+	}
+
+var imlocation = "images/";
+ var currentdate = 0;
+ var image_number = 0;
+ var image = 0
+ function getRandomInt(max) {
+  return Math.floor(Math.random() * (max));
+ }
+  function randomimage() {
+ 	image_number = getRand(28);
+ 	return(image[image_number])
+ }
+
+ image = randomimage
+ image[0] = '1.png'
+ image[1] = '2.png'
+ image[2] = '3.png'
+ image[3] = '4.png'
+ image[4] = '5.png'
+ image[5] = '6.png'
+ image[6] = '7.png'
+ image[7] = '8.png'
+ image[8] = '9.png'
+ image[9] = '10.png'
+ image[10] = '11.png'
+ image[11] = '12.png'
+ image[12] = '14.png'
+ image[13] = '26.png'
+ image[14] = '15.png'
+ image[15] = '16.png'
+ image[16] = '17.png'
+ image[17] = '18.png'
+ image[18] = '19.png'
+ image[19] = '20.png'
+ image[20] = '21.png'
+ image[21] = '22.png'
+ image[22] = '23.png'
+ image[23] = '24.png'
+ image[24] = '25.png'
+ image[25] = '27.png'
+ image[26] = '28.png'
+ image[27] = '29.png'
+ image[28] = '30.png'
+ </script>
+
+
+
+</head>
+
+
+
+<body>
+<h1><a href="Galaxy Bingo.html" style="top: 0px; z-index: 100; opacity: 1;
+ left: 0px; position: absolute; color: #ffff00; font-size: 20px;">Galaxy Bingo</a></h1>
+<input type="button" id="button1" value = "    &#8198;" class="Button1" onclick="setColor1('btn', '000000')"/>
+<div class="div1">
+<input type="button" id="button2" value = "    &#8198;" class="Button2" onclick="setColor2('btn', 'ffffff')"/>
+<input type="button" id="button3" value = "    &#8198;" class="Button3" onclick="setColor3('btn', 'ffffff')"/>
+<input type="button" id="button4" value = "    &#8198;" class="Button4" onclick="setColor4('btn', 'ffffff')"/>
+<input type="button" id="button5" value = "    &#8198;" class="Button5" onclick="setColor5('btn', 'ffffff')"/>
+<input type="button" id="button6" value = "    &#8198;" class="Button6" onclick="setColor6('btn', 'ffffff')"/>
+<input type="button" id="button7" value = "    &#8198;" class="Button7" onclick="setColor7('btn', 'ffffff')"/>
+<input type="button" id="button8" value = "    &#8198;" class="Button8" onclick="setColor8('btn', 'ffffff')"/>
+<input type="button" id="button9" value = "    &#8198;" class="Button9" onclick="setColor9('btn', 'ffffff')"/>
+<input type="button" id="button10" value = "    &#8198;" class="Button10" onclick="setColor10('btn', 'ffffff')"/>
+<input type="button" id="button11" value = "    &#8198;" class="Button11" onclick="setColor11('btn', 'ffffff')"/>
+<input type="button" id="button12" value = "    &#8198;" class="Button12" onclick="setColor12('btn', 'ffffff')"/>
+<input type="button" id="button13" value = "    &#8198;" class="Button13" onclick="setColor13('btn', 'ffffff')"/>
+<input type="button" id="button14" value = "    &#8198;" class="Button14" onclick="setColor14('btn', 'ffffff')"/>
+<input type="button" id="button15" value = "    &#8198;" class="Button15" onclick="setColor15('btn', 'ffffff')"/>
+<input type="button" id="button16" value = "    &#8198;" class="Button16" onclick="setColor16('btn', 'ffffff')"/>
+<input type="button" id="button17" value = "    &#8198;" class="Button17" onclick="setColor17('btn', 'ffffff')"/>
+<input type="button" id="button18" value = "    &#8198;" class="Button18" onclick="setColor18('btn', 'ffffff')"/>
+<input type="button" id="button19" value = "    &#8198;" class="Button19" onclick="setColor19('btn', 'ffffff')"/>
+<input type="button" id="button20" value = "    &#8198;" class="Button20" onclick="setColor20('btn', 'ffffff')"/>
+<input type="button" id="button21" value = "    &#8198;" class="Button21" onclick="setColor21('btn', 'ffffff')"/>
+<input type="button" id="button22" value = "    &#8198;" class="Button22" onclick="setColor22('btn', 'ffffff')"/>
+<input type="button" id="button23" value = "    &#8198;" class="Button23" onclick="setColor23('btn', 'ffffff')"/>
+<input type="button" id="button24" value = "    &#8198;" class="Button24" onclick="setColor24('btn', 'ffffff')"/>
+<input type="button" id="button25" value = "    &#8198;" class="Button25" onclick="setColor25('btn', 'ffffff')"/>
+<input type="button" id="button26" value = "    &#8198;" class="Button26" onclick="setColor26('btn', 'ffffff')"/>
+<input type="button" id="button27" value = "    &#8198;" class="Button27" onclick="setColor27('btn', 'ffffff')"/>
+<input type="button" id="button28" value = "    &#8198;" class="Button28" onclick="setColor28('btn', 'ffffff')"/>
+<input type="button" id="button29" value = "    &#8198;" class="Button29" onclick="setColor29('btn', 'ffffff')"/>
+<input type="button" id="button30" value = "    &#8198;" class="Button30" onclick="setColor30('btn', 'ffffff')"/>
+<input type="button" id="button31" value = "    &#8198;" class="Button31" onclick="setColor31('btn', 'ffffff')"/>
+</div>
+
+
+
+
+</body>
+
+</html>
